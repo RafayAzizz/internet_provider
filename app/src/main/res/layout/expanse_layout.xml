@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:text="Details"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/expanse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Thinkings"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount "
+        android:maxLength="5"
+        android:background="#fff"
+        android:padding="10dp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFFFFF"/>
+
+</LinearLayout>

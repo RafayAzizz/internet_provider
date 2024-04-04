@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+<TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textColor="@color/white"
+    android:text="sure you want to delete this item"
+    />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:text="Cancel"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/message"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:text="Delete"/>
+
+
+</RelativeLayout>

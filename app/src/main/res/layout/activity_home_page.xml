@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_above="@id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <SearchView
+                android:id="@+id/simpleSearchView"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/c_p_radius"
+            android:textSize="10sp"
+            android:imeOptions="actionSearch">
+
+            <!-- You can further customize the SearchView as needed -->
+
+        </SearchView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Name"
+                android:fontFamily="@font/ubuntu_bolditalic"
+
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:background="@drawable/shape"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Status"
+
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/shape"
+
+
+                android:textAlignment="center"/>
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Amount"
+                android:gravity="center"
+
+
+
+                android:background="@drawable/shape"
+
+                android:drawablePadding="60dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ReView_Collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/forground"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Users Payment"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addusers"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/forground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Users"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/expanse"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/forground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Expense"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/referesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/buttonContainer"
+        android:src="@drawable/baseline_refresh_24"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

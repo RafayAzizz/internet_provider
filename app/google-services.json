@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300404562283",
+    "project_id": "internet-9ef58",
+    "storage_bucket": "internet-9ef58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300404562283:android:552a4925a27be2fc1e142e",
+        "android_client_info": {
+          "package_name": "com.example.internet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABItLj-JmdMOLgHKWwcRZFG53-KihwuLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
